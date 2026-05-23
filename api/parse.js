@@ -52,7 +52,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`;
     const body = {
       contents: [{ parts: [{ text: instruction }] }],
       systemInstruction: { parts: [{ text: SYSTEM_PROMPT }] },
